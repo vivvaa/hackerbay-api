@@ -1,0 +1,33 @@
+{
+  "name": "hackerbay",
+  "version": "1.0.0",
+  "description": "A microservice for hackerbay",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js --out-file index-compiled.js",
+    "start": "nodemon --exec babel-node index.js",
+    "test": "nodemon --exec babel-node ./node_modules/mocha/bin/mocha tests/test_suits.js --reporter spec"
+  },
+  "keywords": [
+    "hackerbay"
+  ],
+  "author": "Ogbonna Vitalis",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "image-thumbnail": "^1.0.6",
+    "jsonpatch": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^7.0.1",
+    "mongoose": "^5.8.9",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  }
+}
